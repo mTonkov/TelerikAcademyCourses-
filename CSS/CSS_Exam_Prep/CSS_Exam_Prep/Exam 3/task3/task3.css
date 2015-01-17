@@ -1,0 +1,81 @@
+﻿body {
+    width: 960px;
+    font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+    font-size: 18px;
+}
+
+body, div, ul, li, input, label, legend {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 25px;
+    width: 380px;
+    padding: 15px;
+    color: #fff;
+    background: -webkit-linear-gradient(#ebff5b, #454544);
+    text-align: right;
+    font-size: 0.9em;
+}
+
+fieldset {
+    border: 3px solid #555555;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+    fieldset:last-of-type {
+        margin-bottom: 10px;
+    }
+
+legend {
+    padding: 0 15px;
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#ebff5b, #454544);
+    padding: 5px 15px;
+    width: 150px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+
+    input[type=number] {
+        padding: 5px;
+        width: 35px;
+    }
+
+    input[type=radio] {
+        display: none;
+    }
+
+        input[type=radio]:checked + label {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+
+    button, input[type=reset] {
+        padding: 5px 15px;
+        font-size: 1.2em;
+        color: #333333;
+        width: auto;
+        border: none;
+        border-bottom:1px solid #000;
+        margin-top: 15px;
+        border-radius: 5px;
+        background: -webkit-linear-gradient(#e3fd28, #454544);
+    }
+
+        button:hover, input[type=reset]:hover {
+            background: #f1ff8e;
+        }

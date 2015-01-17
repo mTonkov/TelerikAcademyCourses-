@@ -1,0 +1,67 @@
+html, body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    color: #595d57;
+    background-image: url(images/header-bg.png);
+    background-repeat:repeat-x;
+}
+
+    header h1 {
+        text-transform: uppercase;
+        font-size: 16px;
+        float: left;
+    }
+
+nav {
+    font-size: 14px;
+}
+
+    nav ul {
+        float: right;
+    }
+
+    nav ul, li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+#searchBar {
+    background: #000;
+    color: #adbdb0;
+    font-size: 14px;
+    padding: 10px;
+}
+
+    #searchBar a {
+        text-decoration: none;
+        color: #adbdb0;
+    }
+
+#archives {
+    float: left;
+}
+
+#search {
+    float: right;
+}
+
+#content h1 {
+    color: #595d57;
+    font-size: 24px;
+}
+
+#content p {
+    color: #595d57;
+    font-size: 14px;
+}

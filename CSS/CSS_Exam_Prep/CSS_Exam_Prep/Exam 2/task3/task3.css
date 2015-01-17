@@ -1,0 +1,87 @@
+body {
+    width: 960px;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    font-size: 16px;
+}
+
+div, form, fieldset, input, legend, label, button {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    margin: 25px 15px;
+    width: 385px;
+    background: -webkit-linear-gradient(#68d1ff, #8cfffb);
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+fieldset {
+    padding: 0 15px 5px;
+    text-align: right;
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+    fieldset > input{
+        background: -webkit-linear-gradient(#68d1ff, #8cfffb);
+        border: 1px solid #008fce;
+        border-radius: 5px;
+        height: 25px;
+        width: 150px;
+        margin-top: 1px;
+        padding: 0 10px;
+    }
+
+        fieldset > input:first-of-type {
+            margin-top: 5px;
+        }
+
+
+legend {
+    text-align: right;
+    padding: 0 15px;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+
+#tb-age {
+    width: 40px;
+    padding:0 0 0 5px;
+}
+
+form {
+    text-align: right;
+}
+
+input[type=radio] {
+    margin-top: 5px;
+}
+
+button {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#35c1ff, #8cfffb);
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size:1.2em;
+}
+button:hover {
+        background: #9be1ff;
+}
+input[type=reset] {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#35c1ff, #8cfffb);
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size:1.2em;
+}
+input[type=reset]:hover {
+        background: #9be1ff;
+}

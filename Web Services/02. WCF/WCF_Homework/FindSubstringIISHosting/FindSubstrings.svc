@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Service ="FindSubstrings.Library.FindSubstring" Language="C#" %>

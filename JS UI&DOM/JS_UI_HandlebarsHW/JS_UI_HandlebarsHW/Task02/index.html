@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task 02</title>
+</head>
+<body>
+    <script src="../handlebars-v1.3.0.js"></script>
+    <script id="template-container" type="text/x-handlebars-template-homework">
+        <select>
+        {{# collection}}
+            <option value="{{value}}">{{text}}</option>
+        {{/ collection}}
+        </select>
+    </script>
+    <script src="02.select.js"></script>
+</body>
+</html>

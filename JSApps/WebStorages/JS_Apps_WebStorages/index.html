@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sheep and Rams</title>
+    <style>
+        #game-info {
+            border: 2px ridge black;
+            border-radius: 10px;
+            width: 450px;
+            min-height: 50px;
+        }
+
+            #game-info p {
+                border-bottom: 1px solid black;
+            }
+
+        #scores {
+            border: 2px groove black;
+            border-radius: 10px;
+            width: 300px;
+            position: absolute;
+            left: 600px;
+            top: 100px;
+        }
+
+            #scores > h4 {
+                text-align: center;
+            }
+
+            #scores tr {
+                border-bottom: 1px solid black;
+            }
+
+                #scores tr td {
+                    border-bottom: 1px solid black;
+                    display: inline-block;
+                    width: 100px;
+                    text-align: center;
+                }
+
+                    #scores tr td:first-child {
+                        display: inline-block;
+                        margin: 0 30px;
+                        width: 120px;
+                    }
+    </style>
+</head>
+<body>
+    <h3>
+        Guess the 4-digit number. <br />
+        You will have a "Sheep" when a digit from your guess is contained in the hidden number, <br />
+        and "Ram" when a digit from your guess and its position match a digit and position in the hidden number.
+
+        Hint: The number cannot start with a zero!
+    </h3>
+    <br />
+    <input type="text" id="user-guess" />
+    <div id="game-info"></div>
+    <div id="scores">
+        <h4>Scores</h4>
+        <table id="scores-table"></table>
+    </div>
+    <script src="underscore-min.js"></script>
+    <script src="sheep_and_rams.js"></script>
+</body>
+</html>

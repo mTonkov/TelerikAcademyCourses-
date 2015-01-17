@@ -1,0 +1,90 @@
+body {
+    width: 960px;
+    font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+    font-size: 16px;
+}
+
+body, div, p, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 440px;
+    margin: 5px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.menu > li {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#2ae8ff, #7596e2);
+    padding: 10px 20px;
+    position: relative;
+    vertical-align:top;
+}
+
+    .menu > li:hover {
+        font-size: 1.5em;
+        padding: 10px 50px;
+        
+    }
+
+        .menu > li:hover .content {
+            display: block;
+            position: absolute;
+            width: 260px;
+            left: 20px;
+        }
+
+    .menu > li:nth-child(2):hover .content {
+        width: 280px;
+    }
+
+    .menu > li:nth-child(3):hover .content {
+        width: 190px;
+    }
+
+.content {
+    display: none;
+    background: -webkit-linear-gradient(#fcfeff, #a3d9f0);
+    border: 1px solid #000;
+    border-radius: 10px;
+    z-index: 100;
+    padding: 20px;
+}
+
+    .content h3 {
+        font-size: 0.8em;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 0.7em;
+    }
+
+    .content li {
+        list-style-type: square;
+        margin-left: 5px;
+    }
+
+        .content li a {
+            font-size: 0.7em;
+        }
+
+    .content a:hover {
+        text-decoration: underline;
+    }
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}

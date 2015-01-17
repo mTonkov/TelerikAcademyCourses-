@@ -1,0 +1,57 @@
+﻿body {
+    font-family: Verdana;
+}
+
+.all-content {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 430px;
+    height: 560px;
+    background-color: #eee;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+    .all-content p {
+        margin: 0px;
+    }
+
+    .all-content > div {
+        margin-top: 40px;
+        background-color: #fff;
+        border: 1px solid grey;
+        padding: 19px;
+    }
+
+img {
+    float: left;
+    margin-right: 15px;
+}
+
+    img + p {
+        font-size: 0.8em;
+    }
+
+input {
+    margin-top: 10px;
+    color: white;
+    background-size: 5.5rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+}
+
+    input[value=Listen] {
+        background-image: url(listen.png);
+        width: 5.5rem;
+        padding-left: 1.3em;
+        margin-left:4.5rem;
+        
+    }
+
+    input[value=Add] {
+        background-image: url(add.png);
+        width: 5rem;
+        padding-left: 1.3em;
+        margin-left:-5px;
+    }
+

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TO DO LIST</title>
+    <style>
+        #to-do-input {
+            width: 180px;
+        }
+
+        #the-list {
+            border: 3px solid black;
+            width: 400px;
+            height: 300px;
+            background-color: #ddd;
+        }
+
+        .to-do-item {
+            padding: 5px;
+            border-bottom: 1px solid black;
+            display: block;
+            margin-left: -40px;
+            background-color: #defaff;
+        }
+        .selected{
+            background-color: #ffafaf;
+        }
+        .hidden {
+            max-height: 30px;
+        }
+
+            .hidden li {
+                display: none;
+            }
+    </style>
+</head>
+<body>
+    <h4>TO DO LIST</h4>
+    <input type="text" id="to-do-input" />
+    <input type="button" id="btn-add" value="Add" />
+    <input type="button" id="btn-show-hide" value="Show/Hide All" />
+    <input type="button" id="btn-remove" value="Remove selected" />
+    <ul id="the-list"></ul>
+    <script src="to-do-app.js"></script>
+</body>
+</html>

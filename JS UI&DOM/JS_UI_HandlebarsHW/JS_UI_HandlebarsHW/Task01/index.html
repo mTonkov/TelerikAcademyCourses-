@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task 01</title>
+    <style>
+        table, tr, td, th{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+
+        tr:nth-of-type(2n), thead>tr{
+            background-color:#ddd;
+        }
+
+        td, th{
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <script src="../handlebars-v1.3.0.js"></script>
+    <script id="template-container" type="text/x-handlebars-template-homework">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Title</th>
+                    <th>Date #1</th>
+                    <th>Date #2</th>
+                </tr>
+            </thead>
+            {{# collection}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{title}}</td>
+                <td>{{firstDate}}</td>
+                <td>{{secondDate}}</td>
+            </tr>
+            {{/collection}}
+        </table>
+    </script>
+    <script src="01.table.js"></script>
+</body>
+</html>

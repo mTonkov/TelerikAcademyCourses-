@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="04.CalculatorStyling.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <span>View</span>
+            <span>Edit</span>
+            <span>Help</span>
+        </nav>
+    </header>
+    <div class="display-calculations">
+        <input type="text" name="Calculations" value="8854455" />
+    </div>
+    <div class="bits">
+        <p id="first-row-bits">
+            <span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+        </p>
+
+        <p class="bits-counts">
+            <span>63</span><span>47</span><span>32</span>
+        </p>
+
+        <p id="second-row-bits">
+            <span>0000</span><span>0000</span><span>1000</span><span>0111</span><span>0001</span><span>1011</span><span>1011</span><span>0111</span>
+        </p>
+
+        <p class="bits-counts">
+            <span>31</span><span>15</span><span>0</span>
+        </p>
+
+    </div>
+    <div class="functions">
+        <ul class="numeral-system">
+            <li>
+                <input type="radio" name="numeral" value="Hex" id="hex" />
+                <label for="hex">Hex</label>
+            </li>
+            <li>
+                <input type="radio" name="numeral" value="Dec" id="dec" />
+                <label for="dec">Dec</label>
+            </li>
+            <li>
+                <input type="radio" name="numeral" value="Oct" id="oct" />
+                <label for="oct">Oct</label>
+            </li>
+            <li>
+                <input type="radio" name="numeral" value="Bin" id="bin" />
+                <label for="bin">Bin</label>
+            </li>
+        </ul>
+        <ul class="binary-representation">
+            <li>
+                <input type="radio" name="represent" value="Qword" id="q" />
+                <label for="q">Qword</label>
+            </li>
+            <li>
+                <input type="radio" name="represent" value="Dword" id="d" />
+                <label for="d">Dword</label>
+            </li>
+            <li>
+                <input type="radio" name="represent" value="Word" id="w" />
+                <label for="w">Word</label>
+            </li>
+            <li>
+                <input type="radio" name="represent" value="Byte" id="b" />
+                <label for="b">Byte</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="buttons">
+        <div class="row-of-buttons">
+            <input class="disabled" type="button" value=" " disabled />
+            <input type="button" value="Mod" />
+            <input class="disabled" type="button" value="A" disabled />
+            <input class="disabled" type="button" value="MC" disabled />
+            <input class="disabled" type="button" value="MR" disabled />
+            <input class="disabled" type="button" value="MS" disabled />
+            <input class="disabled" type="button" value="M+" disabled />
+            <input class="disabled" type="button" value="M-" disabled />
+        </div>
+        <div class="row-of-buttons">
+            <input type="button" value="(" />
+            <input type="button" value=")" />
+            <input class="disabled" type="button" value="B" disabled />
+            <input type="button" value="&larr;" id="backspace" />
+            <input type="button" value="CE" />
+            <input type="button" value="C" />
+            <input type="button" value="&plusmn;" />
+            <input class="disabled" type="button" value="&radic;" disabled />
+        </div>
+        <div class="row-of-buttons">
+            <input type="button" value="RoL" />
+            <input type="button" value="RoR" />
+            <input class="disabled" type="button" value="C" disabled />
+            <input class="digit" type="button" value="7" />
+            <input class="digit" type="button" value="8" />
+            <input class="digit" type="button" value="9" />
+            <input type="button" value="/" />
+            <input class="disabled" type="button" value="%" disabled />
+        </div>
+        <div class="row-of-buttons">
+            <input type="button" value="Or" />
+            <input type="button" value="Xor" />
+            <input class="disabled" type="button" value="D" disabled />
+            <input class="digit" type="button" value="4" />
+            <input class="digit" type="button" value="5" />
+            <input class="digit" type="button" value="6" />
+            <input type="button" value="*" />
+            <input class="disabled" type="button" value="1/x" id="fractions" disabled />
+        </div>
+        <div class="row-of-buttons">
+            <input type="button" value="Lsh" />
+            <input type="button" value="Rsh" />
+            <input class="disabled" type="button" value="E" disabled />
+            <input class="digit" type="button" value="1" />
+            <input class="digit" type="button" value="2" />
+            <input class="digit" type="button" value="3" />
+            <input type="button" value="-" />
+        </div>
+        <div class="row-of-buttons">
+            <input type="button" value="Not" />
+            <input type="button" value="And" />
+            <input class="disabled" type="button" value="F" disabled />
+            <input class="digit" type="button" value="0" id="zero" />
+            <input type="button" value="." />
+            <input type="button" value="+" />
+        </div>
+        <input type="button" value="=" id="equals" />
+
+    </div>
+</body>
+</html>

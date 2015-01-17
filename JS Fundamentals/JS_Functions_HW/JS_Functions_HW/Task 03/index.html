@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>03. Count word occurences</title>
+    <link href="../js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <h3>
+        task: Write a function that finds all the occurrences of word in a text<br>
+        -The search can case sensitive or case insensitive;<br>
+        -Use function overloading;
+    </h3>
+
+    <p>Enter some text: </p>
+    <textarea id="user-input-text" style="width:350px; height:150px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat blandit quam, non adipiscing dui interdum sit amet. Maecenas vulputate malesuada molestie. Curabitur blandit mauris vel sem tincidunt vestibulum. phasellus a nunc nunc. Curabitur fermentum aliquam nisl. Nulla fringilla scelerisque egestas. Cras massa dui, volutpat at quam non, interdum suscipit nisl. Integer quis tortor sodales, ultrices magna id, suscipit mauris. Ut venenatis, urna sit amet gravida feugiat, turpis urna pharetra eros, eu fermentum metus est non velit. Nullam eu mauris nec massa venenatis vestibulum sed quis leo. Phasellus eu felis at elit rutrum pellentesque vel sit amet libero. Morbi sit amet egestas risus, id luctus velit.</textarea>
+
+    <p>Enter the word to find:</p>
+    <input type="text" id="user-input-word" placeholder="sit" /><br>
+
+    <input type="checkbox" id="user-input-checkbox" value="true"/>
+    <label for="user-input-checkbox">Case Sensitive Search</label><br><br>
+
+    <button onclick="count()">Count</button>
+
+    <div id="js-console"></div>
+    <script src="../js-console.js"></script>
+    <script src="word-occurences.js"></script>
+</body>
+</html>

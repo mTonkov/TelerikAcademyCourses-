@@ -1,0 +1,142 @@
+﻿body {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background: #d492fe;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: -moz-linear-gradient(top, #d492fe 0, #8f19ef 21%, #9f3eef 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d492fe), color-stop(21%, #8f19ef), color-stop(100%, #9f3eef));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d492fe 0, #8f19ef 21%, #9f3eef 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d492fe 0, #8f19ef 21%, #9f3eef 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d492fe 0, #8f19ef 21%, #9f3eef 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d492fe 0, #8f19ef 21%, #9f3eef 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top', endColorstr='@bottom', GradientType=0);
+  /* IE6-8 */
+  background-attachment: fixed;
+}
+body #reg-form-container,
+body #logo-container {
+  display: inline-block;
+}
+body #reg-form-container {
+  margin-left: 900px;
+}
+body #reg-form-container label {
+  color: #ffffff;
+}
+body #reg-form-container input {
+  background-color: #b25def;
+  border: 1px solid #444444;
+  border-radius: 20px;
+}
+body #reg-form-container button {
+  border: 1px outset #444444;
+  border-top-color: #c1b0ce;
+  border-left-color: #c1b0ce;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #b25def;
+}
+body nav {
+  border: 1px solid #000;
+  border-radius: 15px;
+  position: relative;
+  width: 75%;
+  margin-left: 20px;
+}
+body nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+body nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+}
+body nav ul li ul {
+  display: none;
+}
+body nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 40px;
+}
+body nav ul li:hover ul li {
+  display: block;
+}
+body nav ul li:hover a:hover {
+  text-decoration: underline;
+}
+body section {
+  float: left;
+  border: 1px solid #000;
+  border-radius: 15px;
+  width: 70%;
+  margin-left: 10px;
+  margin-top: 40px;
+  padding: 10px;
+}
+body section article footer {
+  text-align: right;
+  font-size: 1em;
+}
+body section article footer a {
+  text-decoration: none;
+  color: #c57ff5;
+}
+body section article footer a:hover {
+  text-decoration: underline;
+}
+body aside {
+  width: 25%;
+  display: inline-block;
+  margin-top: 40px;
+}
+body aside ul {
+  list-style-type: none;
+}
+body aside ul li {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+body aside ul li li {
+  border: none;
+  margin: 0;
+}
+body aside ul li:nth-of-type(2) ul {
+  margin-bottom: 15px;
+  list-style-image: url('images/li-dot.png');
+}
+body aside ul li a {
+  text-decoration: none;
+  color: #a193ac;
+}
+body aside ul li em,
+body aside ul li strong {
+  color: #d1bee4;
+}
+body aside:after {
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+}
+body aside + footer {
+  margin-top: 30px;
+  font-size: 1.3em;
+  text-align: center;
+}
+/*# sourceMappingURL=01.StyleSheet.css.map */

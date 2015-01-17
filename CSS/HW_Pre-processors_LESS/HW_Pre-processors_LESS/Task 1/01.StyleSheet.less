@@ -1,0 +1,175 @@
+﻿body {
+    @text-color: #FFF;
+    color: @text-color;
+    background-repeat: no-repeat;
+    .background-gradient(#d492fe, 0,#8f19ef, 21%, #9f3eef, 100%);
+
+    .background-gradient(@top, @top-percent, @mid, @mid-percent, @bottom, @bottom-percent) {
+        background: @top; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: -moz-linear-gradient(top, @top @top-percent, @mid @mid-percent, @bottom @bottom-percent); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(@top-percent,@top), color-stop(@mid-percent,@mid), color-stop(@bottom-percent,@bottom)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, @top @top-percent,@mid @mid-percent,@bottom @bottom-percent); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, @top @top-percent,@mid @mid-percent,@bottom @bottom-percent); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, @top @top-percent,@mid @mid-percent,@bottom @bottom-percent); /* IE10+ */
+        background: linear-gradient(to bottom, @top @top-percent,@mid @mid-percent,@bottom @bottom-percent); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@top', endColorstr='@bottom',GradientType=0 ); /* IE6-8 */
+        background-attachment: fixed;
+    }
+
+    #reg-form-container, #logo-container {
+        display: inline-block;
+    }
+
+    #reg-form-container {
+        margin-left: 900px;
+
+        label {
+            color: @text-color;
+        }
+
+        @border-color: #444;
+
+        input {
+            background-color: #b25def;
+            border: 1px solid @border-color;
+            border-radius: 20px;
+        }
+
+        @top-left-border: #c1b0ce;
+
+        button {
+            border: 1px outset @border-color;
+            border-top-color: @top-left-border;
+            border-left-color: @top-left-border;
+            border-radius: 10px;
+            padding: 5px 10px;
+            color: @text-color;
+            background-color: #b25def;
+        }
+    }
+
+    nav {
+        border: 1px solid #000;
+        border-radius: 15px;
+        position: relative;
+        width: 75%;
+        margin-left: 20px;
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: @text-color;
+                    font-size: 1.1em;
+                }
+
+                ul {
+                    display: none;
+                }
+
+                &:hover {
+                    ul {
+                        display: block;
+                        position: absolute;
+                        left: 40px;
+
+                        li {
+                            display: block;
+                        }
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        float: left;
+        border: 1px solid #000;
+        border-radius: 15px;
+        width: 70%;
+        margin-left: 10px;
+        margin-top: 40px;
+        padding: 10px;
+
+        article {
+
+            footer {
+                text-align: right;
+                font-size:1em;
+                a {
+                    text-decoration: none;
+                    color: #c57ff5;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .clear-float() {
+
+        &:after {
+            clear: both;
+            display: block;
+            height: 0;
+            content: "";
+        }
+    }
+
+    aside {
+        width: 25%;
+        display: inline-block;
+        margin-top: 40px;
+        
+        ul {
+            list-style-type: none;
+
+            li {
+                border: 1px solid #000;
+                border-radius: 5px;
+                padding: 0 15px;
+                margin-bottom: 20px;
+
+                li {
+                    border: none;
+                    margin: 0;
+                }
+
+                &:nth-of-type(2) ul {
+                    margin-bottom: 15px;
+                    list-style-image: url('images/li-dot.png');
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #a193ac;
+                }
+
+                em, strong {
+                    color: #d1bee4;
+                }
+            }
+        }
+
+        .clear-float();
+    }
+
+    aside+footer {
+        margin-top: 30px;
+        font-size: 1.3em;
+        text-align: center;
+    }
+}

@@ -1,0 +1,103 @@
+﻿body {
+    width: 960px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+
+div, ul, li, a, span {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 500px;
+    margin: 205px 45px;
+    position: relative;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.msg-bar-content {
+    display: none;
+}
+
+.msg-bar > li {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background: -webkit-linear-gradient(#aaffef, #13ffd2);
+}
+
+span, a {
+    color: #3994ff;
+    text-decoration: none;
+}
+
+.msg-bar > li:hover {
+    background: #00ddb3;
+    border-top: none;
+    border-top: 5px solid #aaffef;
+}
+
+    .msg-bar > li:hover .msg-bar-content {
+        display: block;
+        position: absolute;
+        top: -160px;
+        left: 0;
+        width: 430px;
+        height: 140px;
+        border: 1px solid #000;
+        border-bottom: none;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background: #aaffef;
+        padding: 10px 15px;
+        text-align: justify;
+    }
+
+        .msg-bar > li:hover .msg-bar-content span {
+            display: inline-block;
+        }
+
+.user {
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 5px 15px 5px 25px;
+    margin-bottom: 5px;
+}
+
+.me-item > .user {
+    background-image: url(imgs/me.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+
+.other-item > .user {
+    background-image: url(imgs/male.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+
+.msg-bar-content li {
+    position: relative;
+}
+
+    .msg-bar-content li span:not(.user) {
+        position: absolute;
+        right: 0;
+        text-align: right;
+        border-bottom: 1px solid black;
+        width: 300px;
+        padding: 5px 15px;
+    }
+
+
+    .msg-bar-content li:last-of-type span:last-of-type {
+        border-bottom: none;
+    }

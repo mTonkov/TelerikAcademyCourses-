@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chat</title>
+    <style>
+        div, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #all-chat-messages {
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 500px;
+        }
+
+            #all-chat-messages ul {
+                list-style-type: none;
+            }
+
+            #all-chat-messages .single-post {
+                border-bottom: 1px solid black;
+                padding: 10px;
+            }
+
+                #all-chat-messages .single-post:last-of-type {
+                    border-bottom: none;
+                }
+
+                #all-chat-messages .single-post span {
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+
+                #all-chat-messages .single-post p {
+                    font-style: italic;
+                    margin-left: 20px;
+                    overflow-wrap: break-word;
+                }
+
+        #username {
+            top: -40px;
+            position: relative;
+        }
+
+        #message {
+            width: 250px;
+            height: 50px;
+            resize: none;
+        }
+
+        #get-all-messages {
+            position: absolute;
+            left: 10px;
+            top: 35px;
+        }
+
+        #send-message {
+            position: absolute;
+            left: 100px;
+            top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Username" />
+    <textarea id="message" placeholder="Your message..."></textarea>
+    <button id="get-all-messages">Get all!</button>
+    <button id="send-message">Send</button>
+    <div id="all-chat-messages"></div>
+    <script type="text/x-handlebars-template" id="template">
+        <ul>
+            {{#posts}}
+            {{#if by}}
+            <li class="single-post">
+                <strong>{{by}}</strong><span>said:</span>
+                <p>{{text}}</p>
+            </li>
+            {{/if}}
+            {{/posts}}
+        </ul>
+    </script>
+    <script src="../libs/require.js" data-main="../Model/chat"></script>
+</body>
+</html>

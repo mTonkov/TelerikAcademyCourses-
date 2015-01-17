@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 16px;
+    width: 960px;
+}
+
+body, div, li, ul, aside {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar {
+    display: inline-block;
+    background: -webkit-linear-gradient(#d09bff, #8977ff);
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+    .sidebar ul {
+        display: none;
+    }
+
+    .sidebar li {
+        padding: 5px 15px;
+        position: relative;
+    }
+
+        .sidebar li:not(:last-of-type) {
+            border-bottom: 1px solid #9d00ff;
+        }
+
+        .sidebar li:hover ul {
+            display: block;
+            position: absolute;
+            left: 190px;
+            top: -5px;
+            width: 210px;
+            font-size: 14px;
+            background-color: #b5aaff;
+            background-image: url(imgs/arrow.png);
+            background-repeat: no-repeat;
+            background-position-x: 5px;
+            background-position-y: 15px;
+            background-size: 14px;
+            border-radius: 10px;
+            padding: 5px 20px;
+            padding-right: 5px;
+        }
+
+            .sidebar li:hover ul li {
+                padding: 5px 15px;
+                /*padding-left: 15px;*/
+                font-size: 1.3em;
+            }
+
+
+        .sidebar li:hover {
+            border: 1px solid #9d00ff;
+            border-radius: 5px;
+        }

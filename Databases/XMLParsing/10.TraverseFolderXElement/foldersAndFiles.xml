@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<folders>
+  <folder-content>
+    <dir>..\..\bin</dir>
+    <folder-content>
+      <dir>..\..\bin\Debug</dir>
+      <folder-content>
+        <file>..\..\bin\Debug\10.TraverseFolderXElement.exe</file>
+        <file>..\..\bin\Debug\10.TraverseFolderXElement.exe.config</file>
+        <file>..\..\bin\Debug\10.TraverseFolderXElement.pdb</file>
+        <file>..\..\bin\Debug\10.TraverseFolderXElement.vshost.exe</file>
+        <file>..\..\bin\Debug\10.TraverseFolderXElement.vshost.exe.config</file>
+      </folder-content>
+      <dir>..\..\bin\Release</dir>
+      <folder-content />
+    </folder-content>
+    <dir>..\..\obj</dir>
+    <folder-content>
+      <dir>..\..\obj\Debug</dir>
+      <folder-content>
+        <dir>..\..\obj\Debug\TempPE</dir>
+        <folder-content />
+        <file>..\..\obj\Debug\10.TraverseFolderXElement.csproj.FileListAbsolute.txt</file>
+        <file>..\..\obj\Debug\10.TraverseFolderXElement.exe</file>
+        <file>..\..\obj\Debug\10.TraverseFolderXElement.pdb</file>
+        <file>..\..\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+        <file>..\..\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+        <file>..\..\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+        <file>..\..\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+      </folder-content>
+    </folder-content>
+    <dir>..\..\Properties</dir>
+    <folder-content>
+      <file>..\..\Properties\AssemblyInfo.cs</file>
+    </folder-content>
+    <file>..\..\10.TraverseFolderXElement.csproj</file>
+    <file>..\..\App.config</file>
+    <file>..\..\foldersAndFiles.xml</file>
+    <file>..\..\TraverseFolderXElement.cs</file>
+  </folder-content>
+</folders>

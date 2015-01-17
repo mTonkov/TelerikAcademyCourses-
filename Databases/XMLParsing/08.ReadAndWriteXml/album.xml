@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>1 album-name</name>
+    <author>1 artist</author>
+  </album>
+  <album>
+    <name>2 album-name</name>
+    <author>2 artist</author>
+  </album>
+  <album>
+    <name>3 album-name</name>
+    <author>3 artist</author>
+  </album>
+  <album>
+    <name>4 album-name</name>
+    <author>4 artist</author>
+  </album>
+  <album>
+    <name>5 album-name</name>
+    <author>5 artist</author>
+  </album>
+</albums>

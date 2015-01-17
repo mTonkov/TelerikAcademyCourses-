@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dropdown</title>
+    <style>
+        .dropdown-list-container {
+            width: 150px;
+            position: absolute;
+        }
+
+        .dropdown-list-options {
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown-list-option {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+            .dropdown-list-option:hover {
+                background-color: #eee;
+            }
+
+        #current-selected {
+            border: 3px groove #eee;
+        }
+    </style>
+</head>
+<body>
+    <select id="dropdown">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+    </select>
+    <script src="../jquery-2.1.1.min.js"></script>
+    <script src="create-dropdown.js"></script>
+</body>
+</html>

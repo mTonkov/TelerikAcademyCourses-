@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<dir>
+	<dir>..\..\bin</dir>
+	<dir>
+		<dir>..\..\bin\Debug</dir>
+		<dir>
+			<file>..\..\bin\Debug\09.TraverseFolder.exe</file>
+			<file>..\..\bin\Debug\09.TraverseFolder.exe.config</file>
+			<file>..\..\bin\Debug\09.TraverseFolder.pdb</file>
+			<file>..\..\bin\Debug\09.TraverseFolder.vshost.exe</file>
+			<file>..\..\bin\Debug\09.TraverseFolder.vshost.exe.config</file>
+			<file>..\..\bin\Debug\09.TraverseFolder.vshost.exe.manifest</file>
+		</dir>
+		<dir>..\..\bin\Release</dir>
+		<dir />
+	</dir>
+	<dir>..\..\obj</dir>
+	<dir>
+		<dir>..\..\obj\Debug</dir>
+		<dir>
+			<dir>..\..\obj\Debug\TempPE</dir>
+			<dir />
+			<file>..\..\obj\Debug\09.TraverseFolder.csproj.FileListAbsolute.txt</file>
+			<file>..\..\obj\Debug\09.TraverseFolder.csprojResolveAssemblyReference.cache</file>
+			<file>..\..\obj\Debug\09.TraverseFolder.exe</file>
+			<file>..\..\obj\Debug\09.TraverseFolder.pdb</file>
+			<file>..\..\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+			<file>..\..\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+			<file>..\..\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+			<file>..\..\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+		</dir>
+	</dir>
+	<dir>..\..\Properties</dir>
+	<dir>
+		<file>..\..\Properties\AssemblyInfo.cs</file>
+	</dir>
+	<file>..\..\09.TraverseFolder.csproj</file>
+	<file>..\..\App.config</file>
+	<file>..\..\foldersAndFiles.xml</file>
+	<file>..\..\TraverseFolder.cs</file>
+</dir>

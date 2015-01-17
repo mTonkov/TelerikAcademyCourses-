@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Manage Students</title>
+    <style>
+        .students-list,tr,td,th{
+            /*list-style-type:none;*/
+            border:1px solid #808080;
+            border-collapse:collapse;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input-name" placeholder="Name"/>
+    <input type="text" id="input-grade" placeholder="Grade"/>
+    <input type="text" id="input-id" placeholder="Id is required when deleting a student"/>
+    <br />
+    <button id="get-all">Get All</button>
+    <button id="add-student">Add Student</button>
+    <button id="delete-student">Delete Student By ID</button>
+    <script src="../libs/require.js" data-main="app"></script>
+</body>
+</html>

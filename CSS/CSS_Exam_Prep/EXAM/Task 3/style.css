@@ -1,0 +1,102 @@
+body {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+#root {
+    width: 610px;
+}
+div, ul, li, p, span, strong, input, button, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+    #root > h1 {
+        font-style: italic;
+        color: #2aa0bd;
+        text-align: center;
+        margin: 5px 0 20px;
+    }
+
+
+.chat-container {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #4ae871 0%,#4ae871 45%,#f1ffbc 76%,#f1ffbc 100%); /* Chrome10+,Safari5.1+ */
+    height: 500px;
+    width: 300px;
+    position: relative;
+}
+
+ul {
+    margin: 30px 15px 10px;
+}
+
+.chat-container > h2 {
+    text-align: center;
+    color: #2aa0bd;
+    margin:25px 0 35px;
+}
+
+
+.chat-container .messages li {
+    border-bottom: 1px solid #000;
+    list-style-type: none;
+    color: #2aa0bd;
+}
+
+    .chat-container .messages li span {
+        display: block;
+        word-wrap: break-word;
+    }
+
+    .chat-container .messages li strong {
+        font-style: italic;
+        font-size: 0.9em;
+    }
+
+    .chat-container .messages li.me {
+        text-align: left;
+    }
+
+    .chat-container .messages li.other {
+        text-align: right;
+    }
+
+    .chat-container .messages li:last-of-type {
+        border-bottom: none;
+    }
+
+.chat-container .sent-message {
+    position: absolute;
+    top: 465px;
+    left: 5px;
+}
+
+    .chat-container .sent-message input {
+        background-color: transparent;
+        border: 1px solid #cccccc;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 15px;
+        width: 170px;
+        color: #2aa0bd;
+        padding: 10px 15px;
+        font-size: 1.1em;
+    }
+
+    .chat-container .sent-message button {
+        background-color: transparent;
+        border: 1px solid #cccccc;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 35px;
+        color: #2aa0bd;
+        padding: 5px 15px;
+        font-size: 1.1em;
+    }
+
+        .chat-container .sent-message button:hover {
+            background: -webkit-linear-gradient(top, #4ae871 0%,#4ae871 45%,#f1ffbc 76%,#f1ffbc 100%); /* Chrome10+,Safari5.1+ */
+        }

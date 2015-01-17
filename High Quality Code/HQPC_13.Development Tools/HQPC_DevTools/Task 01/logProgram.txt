@@ -1,0 +1,6 @@
+WARN - Valid input: 5. Division NOT successful!
+WARN - Valid input: 5. Division NOT successful!
+INFO - Valid input: 6. Division successful!
+ERROR - 21a
+ERROR - five
+INFO - Valid input: 9. Division successful!

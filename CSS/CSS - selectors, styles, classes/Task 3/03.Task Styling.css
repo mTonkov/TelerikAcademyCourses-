@@ -1,0 +1,43 @@
+﻿body {
+    background-color: #a8a8a8;
+    font-size: 20px;
+}
+
+    body > header > h1 {
+        text-align: center;
+    }
+
+h1 {
+    color: #fafad8;
+}
+nav > ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+    nav > ul a {
+        color: #ffffff;
+    }
+
+li:not(:last-child) a {
+    text-decoration: none;
+}
+
+nav .current {
+    background-color: #d7d7d7;
+}
+
+footer > p {
+    font-size: 0.8rem;
+}
+
+    footer > p a {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+        color: black;
+    }
+
+section + footer {
+    text-align: center;
+}

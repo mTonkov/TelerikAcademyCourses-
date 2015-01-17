@@ -1,0 +1,45 @@
+﻿body {
+  background-color: #ccc;
+}
+body #container {
+  margin-left: 30%;
+  display: inline-block;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  height: 475px;
+  /*space between thumbnails*/
+}
+body #container a img {
+  width: 100px;
+  height: 75px;
+  opacity: 0.5;
+  margin: 0;
+  float: left;
+  margin-right: 5px;
+}
+body #container a img:hover {
+  opacity: 1;
+}
+body #container a:last-of-type img {
+  margin-right: 0;
+}
+body #container a:last-of-type:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+}
+body #container div img {
+  position: absolute;
+  top: 95px;
+  left: 10px;
+  width: 520px;
+  height: 390px;
+}
+body #container div img:target {
+  z-index: 1;
+}
+/*# sourceMappingURL=GalleryStyleSheet.css.map */

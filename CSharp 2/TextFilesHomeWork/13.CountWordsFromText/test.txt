@@ -1,0 +1,4 @@
+There are various courses at the Telerik Academy.
+The current Telerik Academy course is Csharp- part 2.
+To become a software engineer, you have to pass all exams at the Academy of Telerik.
+Telerik Academy is part of the Telerik Company.

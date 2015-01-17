@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Slider</title>
+    <style>
+        #wrapper {
+            border: 1px solid black;
+            width: 800px;
+            height: 500px;
+            text-align: center;
+        }
+
+        table, tr, td {
+            border: 1px solid black;
+        }
+
+        img {
+            width: 600px;
+            height: 400px;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            left: 115px;
+            top: 50px;
+            z-index: -100;
+        }
+
+        .current {
+            display: block;
+            z-index: 100;
+        }
+
+        #btn-prev{
+            position:absolute;
+            left:25px;
+            top:220px;
+            padding:10px;
+            font-size:16px;
+        }
+        #btn-next{
+            position:absolute;
+            left:725px;
+            top:220px;
+            padding:10px;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <ul class="slide">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <select class="slide">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+        </select>
+        <table class="slide">
+            <tr>
+                <td>Key 1</td>
+                <td>Value 1</td>
+            </tr>
+            <tr>
+                <td>Key 2</td>
+                <td>Value 2</td>
+            </tr>
+            <tr>
+                <td>Key 3</td>
+                <td>Value 3</td>
+            </tr>
+            <tr>
+                <td>Key 4</td>
+                <td>Value 4</td>
+            </tr>
+            <tr>
+                <td>Key 5</td>
+                <td>Value 5</td>
+            </tr>
+        </table>
+    </div>
+    <script src="../jquery-2.1.1.min.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

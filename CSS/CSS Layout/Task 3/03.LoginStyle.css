@@ -1,0 +1,66 @@
+﻿.login {
+    width: 750px;
+    height: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    background-size: 770px 320px;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+    .login div {
+        height: 70px;
+        background-image: url(body_shadow.png);
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+    }
+
+label {
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    background-image: url(pc.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: inline-block;
+    height: 50px;
+    padding-left: 60px;
+    padding-top: 5px;
+}
+
+section {
+    width: 750px;
+    height: 300px;
+}
+
+h2 {
+    color: #fbd71e;
+    font-family: Cambria;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+p {
+    color: #aaa;
+    font-family: Verdana;
+    font-size: 1em;
+    margin: 0px;
+}
+
+input {
+    margin-left: 20px;
+    width: 180px;
+    height: 20px;
+}
+
+    input[value=GO] {
+        margin-left: 20px;
+        width: 56px;
+        height: 28px;
+        color: white;
+        background-image: url(button.png);
+        background-repeat: no-repeat;
+        border: none;
+    }

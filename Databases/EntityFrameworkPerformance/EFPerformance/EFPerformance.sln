@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.EFPerformance", "EFPerformance\01.EFPerformance.csproj", "{D48B8409-861F-419A-82FA-9C6C00180C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAcademy.Model", "TelerikAcademy.Model\TelerikAcademy.Model.csproj", "{A83CC594-D20F-4075-A420-3375D7569659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. CompareQueriesToList", "02. CompareQueriesToList\02. CompareQueriesToList.csproj", "{8A774BE8-0287-468E-8204-04DF5F858751}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{04EEC474-9A57-49CF-BB77-EC7E174D7FE8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D48B8409-861F-419A-82FA-9C6C00180C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D48B8409-861F-419A-82FA-9C6C00180C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D48B8409-861F-419A-82FA-9C6C00180C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D48B8409-861F-419A-82FA-9C6C00180C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83CC594-D20F-4075-A420-3375D7569659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83CC594-D20F-4075-A420-3375D7569659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83CC594-D20F-4075-A420-3375D7569659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83CC594-D20F-4075-A420-3375D7569659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A774BE8-0287-468E-8204-04DF5F858751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A774BE8-0287-468E-8204-04DF5F858751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A774BE8-0287-468E-8204-04DF5F858751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A774BE8-0287-468E-8204-04DF5F858751}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

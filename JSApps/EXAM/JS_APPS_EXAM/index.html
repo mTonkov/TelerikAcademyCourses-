@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Crowd Share</title>
+    <style>
+        #log-out {
+            width: 50px;
+            height: 30px;
+            position: absolute;
+            left: 300px;
+        }
+
+        #returned-messages ul {
+            list-style-type: none;
+        }
+
+        .msg-info, .msg-text {
+            display: inline-block;
+        }
+
+        .msg-info {
+            width: 50px;
+        }
+
+        .msg-text {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+    </div>
+    <script src="libs/require.js" data-main="app"></script>
+    <script type="text/x-handlebars-template" id="messages-template">
+        <ul>
+            {{#messages}}
+            <li>
+                <div class="msg-info">
+                    <p>From {{user.username}}</p>
+                    <p>Title {{title}}</p>
+                    <p>Posted on {{postDate}}</p>
+                </div>
+                <div class="msg-text">{{body}}</div>
+            </li>
+            {{/messages}}
+        </ul>
+    </script>
+</body>
+</html>

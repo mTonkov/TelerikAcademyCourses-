@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Twitter posts</title>
+    <style>
+        #authorize {
+            font-size: 24px;
+        }
+
+        fieldset {
+            width: 500px;
+        }
+
+        #result {
+            position: absolute;
+            top: 10px;
+            left: 600px;
+        }
+
+        .all-posts {
+            list-style-type: none;
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 500px;
+            height: 450px;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+
+        .single-post {
+            border-bottom: 1px solid black;
+            padding: 10px;
+            position: relative;
+        }
+
+            .single-post:last-of-type {
+                border-bottom: none;
+            }
+
+            .single-post .user-name {
+                position: absolute;
+                top: 10px;
+                left: 70px;
+            }
+    </style>
+</head>
+<body>
+    <p class="lead">Please enter the name of the Twitter user whose timeline you wish to view.</p>
+    <p><a href="#" id="authorize">Log in Twitter</a> before using this app.</p>
+    <fieldset>
+        <legend>Get user feed:</legend>
+        <div class="form-group">
+            <p>Username: </p>
+            <input type="text" id="username" value="JeremyClarkson" />
+        </div>
+        <div class="form-group">
+            <p>Number of messages: </p>
+            <input type="text" id="count" value="10" />
+        </div>
+        <button class="btn btn-primary" id="get-user">Get feed</button>
+    </fieldset>
+    <div id="result"></div>
+
+    <script src="../libs/require.js" data-main="tweeter"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_DayOfWeek.Console", "WCF_Homework\WCF_DayOfWeek.Console.csproj", "{368608E6-C86A-4FCF-B91B-38DFBA57F10E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0312F9E-69F8-451E-BAC4-B22065B01E92} = {A0312F9E-69F8-451E-BAC4-B22065B01E92}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_DayOfWeek.Service", "WCF_DayOfWeek.Service\WCF_DayOfWeek.Service.csproj", "{A0312F9E-69F8-451E-BAC4-B22065B01E92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSubstrings.Library", "FindSubstrings.Library\FindSubstrings.Library.csproj", "{54E27E1D-BAEB-420D-A748-4BADB7361158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSubstringIISHosting", "FindSubstringIISHosting\FindSubstringIISHosting.csproj", "{24B0DD73-125E-48A7-A7CC-EB25E79600C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSubstring.ConsoleClient", "FindSubstring.Console\FindSubstring.ConsoleClient.csproj", "{057A5357-917F-4939-95FF-782667A9CD57}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24B0DD73-125E-48A7-A7CC-EB25E79600C2} = {24B0DD73-125E-48A7-A7CC-EB25E79600C2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{368608E6-C86A-4FCF-B91B-38DFBA57F10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{368608E6-C86A-4FCF-B91B-38DFBA57F10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{368608E6-C86A-4FCF-B91B-38DFBA57F10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{368608E6-C86A-4FCF-B91B-38DFBA57F10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0312F9E-69F8-451E-BAC4-B22065B01E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0312F9E-69F8-451E-BAC4-B22065B01E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0312F9E-69F8-451E-BAC4-B22065B01E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0312F9E-69F8-451E-BAC4-B22065B01E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E27E1D-BAEB-420D-A748-4BADB7361158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E27E1D-BAEB-420D-A748-4BADB7361158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E27E1D-BAEB-420D-A748-4BADB7361158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E27E1D-BAEB-420D-A748-4BADB7361158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B0DD73-125E-48A7-A7CC-EB25E79600C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B0DD73-125E-48A7-A7CC-EB25E79600C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B0DD73-125E-48A7-A7CC-EB25E79600C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B0DD73-125E-48A7-A7CC-EB25E79600C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057A5357-917F-4939-95FF-782667A9CD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057A5357-917F-4939-95FF-782667A9CD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057A5357-917F-4939-95FF-782667A9CD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057A5357-917F-4939-95FF-782667A9CD57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

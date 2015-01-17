@@ -1,0 +1,49 @@
+﻿body {
+  background-color: #ccc;
+}
+body #container {
+  margin-left: 30%;
+  display: inline-block;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  /*space between thumbnails*/
+}
+body #container label img {
+  width: 100px;
+  height: 75px;
+  opacity: 0.5;
+  margin: 0;
+  float: left;
+  margin-right: 5px;
+}
+body #container label:last-of-type img {
+  margin-right: 0;
+}
+body #container label:last-of-type:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+}
+body #container label:hover img {
+  opacity: 1;
+}
+body #container div img {
+  display: none;
+  width: 520px;
+  height: 390px;
+  position: relative;
+  top: 10px;
+  left: 0;
+}
+body #container input {
+  display: none;
+}
+body #container input:checked + img {
+  display: block;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=02.ZoomImagesStyling.css.map */

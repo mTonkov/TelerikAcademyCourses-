@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Data types and variables- Task 1</title>
+    <link href="../js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="../js-console.js"></script>
+    <script id="solution-task01">
+        jsConsole.writeLine("=================== Task 01 ===================");
+        var age = 21,
+            firstName = "Pesho",
+            lastName = 'Peshov',
+            isMale = true,
+            height = 1.75,
+            weight = 83;
+
+        jsConsole.writeLine("User is" + " " + firstName + " " + lastName + " " + age + "years old.");
+        jsConsole.writeLine("Confirm user is male: " + isMale);
+        jsConsole.writeLine("User is " + height + "meters tall and weighs " + weight + "kg");
+
+        jsConsole.writeLine("=================== Task 02 ===================");
+        var quotedText = "'How you doin' ?', Joey said.";
+        jsConsole.writeLine(quotedText);
+
+        jsConsole.writeLine("=================== Task 03 ===================");
+        jsConsole.writeLine("'Age' is of type: " + typeof (age));
+        jsConsole.writeLine("'firstName' is of type: " + typeof (firstName));
+        jsConsole.writeLine("'lastName' is of type: " + typeof (lastName));
+        jsConsole.writeLine("'isMale' is of type: " + typeof (isMale));
+        jsConsole.writeLine("'height' is of type: " + typeof (height));
+        jsConsole.writeLine("'weight' is of type: " + typeof (weight));
+        jsConsole.writeLine("'quotedText' is of type: " + typeof (quotedText));
+
+        jsConsole.writeLine("=================== Task 04 ===================");
+        var nullVariable = null, undefinedVariable;
+        jsConsole.writeLine("'nullVariable' is of type: " + typeof (nullVariable));
+        jsConsole.writeLine("'undefinedVariable' is of type: " + typeof (undefinedVariable));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public abstract class Account : IDepositable, IInterest
+    {
+        private decimal balance;
+        private decimal interest;
+       
+        public Account(Customer client, decimal bal, decimal interest)
+        {
+            this.Client = client;
+            this.Balance = bal;
+            this.InterestRate = interest;
+        }
+
+        
+        public Customer Client { get; set; }
+        public decimal Balance
+        {
+            get
+            {
+                return this.balance;
+            }
+            protected set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("The initial amount in the account must be a non-negative value");
+                }
+                this.balance = value;
+            }
+        }
+        public decimal InterestRate
+        {
+            get
+            {
+                return this.interest;
+            }
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("The interest rate for the account must be a non-negative value");
+                }
+                this.interest = value;
+            }
+        }
+
+        public virtual void DepositMoney(decimal amount)
+        {
+            if (amount<0)
+            {
+                throw new ArgumentException("Your input is a negative value. To subtract money, you should use the \"Withdraw\" method.");
+            }
+            this.Balance += amount;
+        }
+        public virtual decimal InterestAmount(int months) 
+        {
+            return months * (InterestRate/100) * Balance;
+        }
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {           
+            var individualLoan = new Loan(Customer.Individual, 10000m, 5.5m);
+
+            Console.WriteLine(individualLoan.InterestAmount(4));
+            
+            var companyLoan = new Loan(Customer.Company, 10000m, 5.5m);
+
+            Console.WriteLine(companyLoan.InterestAmount(4));
+
+        }
+    }
+
+
+    public class Loan : Account, IDepositable
+    {
+        public Loan(Customer cl, decimal bal, decimal intrst)
+            : base(cl, bal, intrst)
+        { }
+
+
+        public override decimal InterestAmount(int months)
+        {
+            if (months<0)
+            {
+                throw new ArgumentException("Number of months should be a non-negative value");
+            }
+ 
+            if (months >= 3)
+            {
+                months -= (int)this.Client;
+            }
+            else
+            {
+                months = 0;
+            }
+            return base.InterestAmount(months);
+        }
+    }
+
+
+    class Mortgage : Account, IDepositable
+    {
+        public Mortgage(Customer cl, decimal bal, decimal intrst)
+            : base(cl, bal, intrst)
+        { }
+
+
+        public override decimal InterestAmount(int months)
+        {
+            if (months < 0)
+            {
+                throw new ArgumentException("Number of months should be a non-negative value");
+            }
+
+            decimal halfInterest = base.InterestAmount(6);
+                // half of the interest for the first 12 months equals the full interest for 6 months             
+
+            if (this.Client == Customer.Individual && months <= 6)
+            {
+                return 0;
+            }
+            else if (this.Client == Customer.Company && months<=12)
+            {
+                halfInterest = base.InterestAmount(months/2);
+            }
+
+            return base.InterestAmount(months) - halfInterest;
+        }
+    }
+
+
+    class Deposit : Account, IDepositable, IWithdrawable
+    {
+        public Deposit(Customer cl, decimal bal, decimal intrst)
+            : base(cl, bal, intrst)
+        { }
+
+        public void WithdrawMoney(decimal amount)
+        {
+            this.Balance -= amount;
+        }
+
+        public override decimal InterestAmount(int months)
+        {
+            decimal minimumInterestAmount = 1000;
+
+            if (this.Balance < minimumInterestAmount)
+            {
+                return 0;
+            }
+            return base.InterestAmount(months);
+        }
+    }
+
+
+    public interface IDepositable
+    {
+         void DepositMoney(decimal amount);
+    }
+
+
+    public interface IInterest
+    {
+        decimal InterestAmount(int months);
+    }
+
+
+    public interface IWithdrawable
+    {
+        void WithdrawMoney(decimal amount);
+    }
+
+
+    public enum Customer
+    {
+        Individual = 3, 
+        Company = 2
+    }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<meta charset= "utf-8"/>
+<style>
+table
+	{
+	border-collapse:collapse;
+	}
+table,tr, td
+	{
+	border: 1px solid grey
+	}
+label 
+{
+font-family:"Arial"; 
+float:right
+}	
+textarea
+{
+resize : none;
+}
+</style>
+</head>
+
+<body>
+<form method="post" action="#">
+	<table>
+		<tr>
+			<td>
+				<label for="ln">Last Name</label>
+			</td>
+			<td>
+				<input type="text" id="ln" style="width:200px"/>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="fn">First Name</label>
+			</td>
+			<td>
+				<input type="text" id="fn" style="width:200px"/>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="adres">Address</label>
+			</td>
+			<td>
+				<textarea name="Address" id="adres" >Type your address</textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="cty">City</label>
+			</td>
+			<td>
+				<table>
+					<tr>
+						<td>
+							<input type="text" id="cty" />
+						</td>
+						<td>
+							<label for="stat">State</label>
+						</td>
+						<td>
+							<input type="text" id="stat" style="width:50px"/>
+						</td>	
+					</tr>
+				</table>				
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="zip">ZIP/Postal Code</label>
+			</td>
+			<td>
+				<input type="text" id="zip" style="width:80px"/>
+			</td>	
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="origin">Country</label>
+			</td>
+			<td>
+				<select name="country" style="width:80px" id="origin">
+					<option value="1" selected="selected">Albania</option>
+					<option value="2">Bulgaria</option>
+					<option value="3">Croatia</option>
+					<option value="4">Denmark</option>
+					<option value="5">Estonia</option>
+					<option value="6">France</option>
+					<option value="7">Germany</option>
+				</select>
+			</td>	
+		</tr>
+		
+		<tr>
+			<td style="max-width:150px">
+				<label for="phone1">Phone(country code, area code, number)</label>
+			</td>
+			<td>
+				<span>(+</span>
+				<input type="tel" id="phone1" style="width:35px"/> 
+				<span>)</span>
+				<input type="tel" id="phone2" style="width:35px"/> 
+				<span>-</span>
+				<input type="tel" id="phone3" style="width:80px"/>
+			</td>	
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="mail">E-mail</label>
+			</td>
+			<td>
+				<input type="email" id="mail"/>
+			</td>	
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="birthday1">Birth Date</label>
+			</td>
+			<td>
+				<span> Month</span>
+				<input type="text" id="birthday1" style="width:20px"/> 
+				<span> Day</span>
+				<input type="text" id="birthday2" style="width:20px"/> 
+				<span> Year(4 digit)</span>
+				<input type="text" id="birthday3" style="width:40px"/>
+			</td>	
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="gender">Gender</label>
+			</td>
+			<td>
+				<select name="gender" id="gender">
+					<option value="Value 1" selected="selected">Male</option>
+					<option value="Value 2">Female</option>
+					<option value="Value 3">Other</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label>Starting date</label>
+			</td>
+			<td>
+				<input type="radio" name="startingDate" value="Spring" id="spring" />Spring 2006  
+				<input type="radio" name="startingDate" value="Summer" id="summer"/> Summer 2006
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="cq">Comments/Questions</label>
+			</td>
+			<td>
+				<textarea name="Comment"  id="cq"></textarea>  
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" style="text-align:center; background-color: skyblue">			
+				<input type="submit" value="Submit" />  
+				<input type="reset" value="Clear this form" name="resetBtn"/>  
+			</td>
+		</tr>
+	</table>
+
+</form>
+</body>
+</html>

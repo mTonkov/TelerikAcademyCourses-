@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <album-name>1 album-name</album-name>
+    <artist>1 artist</artist>
+    <year>1 year</year>
+    <producer>1 producer</producer>
+    <price>1</price>
+    <songs>
+      <song>
+        <title>title 0 from the album 1 album-name</title>
+        <duration>duration 0</duration>
+      </song>
+      <song>
+        <title>title 1 from the album 1 album-name</title>
+        <duration>duration 1</duration>
+      </song>
+      <song>
+        <title>title 2 from the album 1 album-name</title>
+        <duration>duration 2</duration>
+      </song>
+      <song>
+        <title>title 3 from the album 1 album-name</title>
+        <duration>duration 3</duration>
+      </song>
+      <song>
+        <title>title 4 from the album 1 album-name</title>
+        <duration>duration 4</duration>
+      </song>
+      <song>
+        <title>title 5 from the album 1 album-name</title>
+        <duration>duration 5</duration>
+      </song>
+      <song>
+        <title>title 6 from the album 1 album-name</title>
+        <duration>duration 6</duration>
+      </song>
+      <song>
+        <title>title 7 from the album 1 album-name</title>
+        <duration>duration 7</duration>
+      </song>
+      <song>
+        <title>title 8 from the album 1 album-name</title>
+        <duration>duration 8</duration>
+      </song>
+      <song>
+        <title>title 9 from the album 1 album-name</title>
+        <duration>duration 9</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <album-name>2 album-name</album-name>
+    <artist>2 artist</artist>
+    <year>2 year</year>
+    <producer>2 producer</producer>
+    <price>2</price>
+    <songs>
+      <song>
+        <title>title 0 from the album 2 album-name</title>
+        <duration>duration 0</duration>
+      </song>
+      <song>
+        <title>title 1 from the album 2 album-name</title>
+        <duration>duration 1</duration>
+      </song>
+      <song>
+        <title>title 2 from the album 2 album-name</title>
+        <duration>duration 2</duration>
+      </song>
+      <song>
+        <title>title 3 from the album 2 album-name</title>
+        <duration>duration 3</duration>
+      </song>
+      <song>
+        <title>title 4 from the album 2 album-name</title>
+        <duration>duration 4</duration>
+      </song>
+      <song>
+        <title>title 5 from the album 2 album-name</title>
+        <duration>duration 5</duration>
+      </song>
+      <song>
+        <title>title 6 from the album 2 album-name</title>
+        <duration>duration 6</duration>
+      </song>
+      <song>
+        <title>title 7 from the album 2 album-name</title>
+        <duration>duration 7</duration>
+      </song>
+      <song>
+        <title>title 8 from the album 2 album-name</title>
+        <duration>duration 8</duration>
+      </song>
+      <song>
+        <title>title 9 from the album 2 album-name</title>
+        <duration>duration 9</duration>
+      </song>
+    </songs>
+  </album>
+</albums>

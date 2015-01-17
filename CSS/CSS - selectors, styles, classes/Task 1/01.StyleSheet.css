@@ -1,0 +1,42 @@
+﻿body {
+    background-color: #746c7a;
+    font-family: Calibri;
+}
+
+td.ticket {
+color: #b2afb4;
+font-size: 20px;
+}
+.first-column{
+    vertical-align: text-top;
+    font-style:italic;
+    color: #dbd0e3;
+}
+
+div.circle{
+	width: 12px;
+	height: 12px;
+	background-color: #28f392;
+	border-radius: 50%;
+    border:1px solid grey;
+}
+
+div.supportable{
+    color:red;
+    font-weight: bold;
+}
+
+div.name,div.circle{
+    display:inline-block;
+}
+
+.name,.email,.link-to-post{
+    color: #e6d08b;
+}
+.last-action, .response-time{
+    color: #b2afb4;
+}
+.status{
+    color:#dc6a25;
+    font-weight:bold;
+}

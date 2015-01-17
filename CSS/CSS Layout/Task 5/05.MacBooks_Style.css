@@ -1,0 +1,71 @@
+﻿.all-content {
+    width: 50%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav {
+    padding-left: 50px;
+    font-family: Calibri;
+    text-align: center;
+}
+
+ul, li {
+    list-style-type: none;
+    display: inline;
+}
+
+    ul a {
+        font-size: 1.5em;
+        color: #2abcf2;
+    }
+
+section {
+    border: 2px solid grey;
+    width: 65%;
+    padding-bottom: 5px;
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+}
+
+fieldset {
+    width: 43%;
+    display: inline-block;
+}
+
+    fieldset p {
+        font-family: Constantia;
+    }
+
+        fieldset p:last-of-type {
+            display: inline-block;
+            margin: 0px;
+            margin-left: 30px;
+        }
+
+        fieldset p:nth-last-of-type(2) {
+            display: inline-block;
+            margin: 0px;
+            margin-left: 30px;
+        }
+
+img {
+    width: 55%;
+    float: left;
+    margin-right: 10px;
+    -webkit-transform: rotateY(180deg);
+}
+
+form > p {
+    font-family: Constantia;
+    font-size: 1.3em;
+}
+
+    form > p:first-of-type {
+        margin-top: 50px;
+    }
+
+input {
+    width: 150px;
+}

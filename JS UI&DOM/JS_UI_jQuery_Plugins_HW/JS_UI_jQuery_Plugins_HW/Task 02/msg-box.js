@@ -16,7 +16,7 @@
                 throwMessage(message, "yellowgreen");
             },
             error: function (message) {
-                throwMessage(message, "magenta");
+                throwMessage(message, "brown");
             }
         }
     }

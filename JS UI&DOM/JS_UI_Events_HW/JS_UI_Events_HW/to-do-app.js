@@ -13,6 +13,8 @@ addButton.addEventListener("click", function () {
 
         theList.appendChild(newItem);
     }
+	
+	document.getElementById("to-do-input").value = "";
 });
 
 theList.addEventListener("click", function (ev) {

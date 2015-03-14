@@ -44,10 +44,12 @@ setInterval(getNextElement, 5000);
 jQuery.fn.nextOrFirst = function(selector){//if the current element is the last one, the first is selected
     
     var next = this.next(selector);
+	
     return (next.length) ? next : this.prevAll(selector).last();
 }
 
 jQuery.fn.prevOrLast = function(selector){
     var prev = this.prev(selector);
+	console.log(prev);
     return (prev.length) ? prev : this.nextAll(selector).last();
 }
